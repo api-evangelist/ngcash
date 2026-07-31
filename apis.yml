@@ -1,7 +1,30 @@
 aid: ngcash
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ngcash.png
 name: NG.Cash
-description: NG.Cash is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  NG.CASH is a Brazilian digital banking platform built for the new generation
+  (roughly ages 12 to 30), founded in 2021 and headquartered in Rio de Janeiro.
+  Authorized by Brazil's Central Bank as a payment institution and electronic
+  currency issuer, it offers a digital account with Pix instant payments, a
+  personalized Mastercard prepaid and virtual card, bill payment, mobile
+  top-ups, a savings feature ("Cofrinho"), allowance management, and a discount
+  marketplace, plus credit products offered as a banking correspondent through
+  partners such as BTG Pactual and QI SCD. NG.CASH is a consumer-facing mobile
+  application (iOS and Android) with over three million active accounts; it
+  publishes no public developer API, developer portal, or OpenAPI specification.
+  This profile was surfaced as a portfolio company of a16z and enriched by the
+  API Evangelist network from public sources.
 url: https://raw.githubusercontent.com/api-evangelist/ngcash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Digital Banking
+- Payments
+- Pix
+- Prepaid Cards
+- Brazil
+- Consumer Finance
+- Generation Z
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ngcash-domain-security.yml
+- type: Website
+  url: https://www.ng.cash/
+- type: Support
+  url: https://help.ng.cash/pt-BR/
+- type: HelpCenter
+  url: https://help.ng.cash/pt-BR/
+- type: TermsOfService
+  url: https://www.ng.cash/termos-de-uso
+- type: PrivacyPolicy
+  url: https://www.ng.cash/politica-de-privacidade
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
